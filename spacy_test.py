@@ -11,8 +11,6 @@ for token in doc:
     if token.pos_ == 'NOUN' or token.pos_ == 'VERB' or token.pos_ == 'ADJ' or token.pos_ == "PROPN":
         keywords.append(token.text)
 
-
-cols = ['machine', 'trouble', 'analysis', 'solution']
 milling = pd.read_csv('milling_machine.csv')
 edm = pd.read_csv('edm_milling.csv')
 print(milling.head())
