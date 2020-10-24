@@ -1,4 +1,4 @@
-Machine,Trouble,Analysis ,Solution
+Machine,Trouble,Analysis,Solution
 EDM,No power Input,No main power switch,Check power input
 EDM,No power Input,Power lines loosened,Connect all lines closely
 EDM,No power Input,Set emergency stop,Reset it
