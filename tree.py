@@ -8,32 +8,16 @@ class Tree:
     >>> t.branches[1].is_leaf()
     True
     """
-    def __init__(self, label, branches=[]):
+    def __init__(self, label, branches=[], score = 0, keywords = []):
         for b in branches:
             assert isinstance(b, Tree)
         self.label = label
+        self.score = score
+        self.keywords = keywords
         self.branches = list(branches)
 
     def is_leaf(self):
         return not self.branches
-
-    def map(self, fn):
-        """
-        Apply a function `fn` to each node in the tree and mutate the tree.
-
-        >>> t1 = Tree(1)
-        >>> t1.map(lambda x: x + 2)
-        >>> t1.map(lambda x : x * 4)
-        >>> t1.label
-        12
-        >>> t2 = Tree(3, [Tree(2, [Tree(5)]), Tree(4)])
-        >>> t2.map(lambda x: x * x)
-        >>> t2
-        Tree(9, [Tree(4, [Tree(25)]), Tree(16)])
-        """
-        self.label = fn(self.label)
-        for b in self.branches:
-            b.map(fn)
 
     def __contains__(self, e):
         """

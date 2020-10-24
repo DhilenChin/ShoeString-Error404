@@ -18,7 +18,6 @@ edm = pd.read_csv('edm_milling.csv')
 print(milling.head())
 print(edm.head())
 
-
 """
 #simple keyword test
 print(keywords)
