@@ -10,6 +10,8 @@ edm = pd.read_csv('edm_milling.csv')
 print(milling.head())
 print(edm.head())
 
+
+'''
 #simple keyword test
 print(keywords)
 if 'cnc' in keys:
@@ -22,3 +24,4 @@ elif 'milling' in keys:
     print("You are having problems with a milling machine")
 else:
     print("I'm sorry, I don't know that machine")
+'''
