@@ -1,0 +1,22 @@
+Machine,Trouble,Analysis,Solution
+Milling Machine,The workpiece milled is not flat,The spindle bearing is loose,Adjust the spindle bearing gap
+Milling Machine,The workpiece milled is not flat,"The gibs of X, Y axis are loose",Adjust the gibs' gap
+Milling Machine,The workpiece milled is not flat,The processing amount is too much,Choose reasonable processing amount
+Milling Machine,The workpiece milled is not flat,The tools are damaged,Change the tools
+Milling Machine,The machine shakes when cutting workpiece,The machine is located unsteadily,Retighten the machine
+Milling Machine,The machine shakes when cutting workpiece,The cutting condition is not good,Choose suitable cutting feed
+Milling Machine,Handle feeling is heavy,the wedge is too tight ,Adjust the wedge
+Milling Machine,Handle feeling is heavy,The gap between lead screw and screw nut is not right,Adjust the gap
+Milling Machine,Handle feeling is heavy,Oil line blocked,Check the oil line and repair it
+Milling Machine,Handle feeling is heavy,No oil in oil pump,Add oil
+Milling Machine,Handle feeling is heavy,The oil pump does not work,check the oil pump and oil line
+Milling Machine,The spindle sleeve is tight,The spindle sleeve lacks of oil ,Add oil
+Milling Machine,The spindle sleeve is tight,The spindle sleeve is dirty,Clean the spindle sleeve and repair it
+Milling Machine,No coolant liquid,The water pump does not work,Check the water pump
+Milling Machine,No coolant liquid,The water pump turns in reverse direction,Change its rotation direction
+Milling Machine,The spindle feed is not smooth,The fixed bar of hi-lo sleeve is not loosened ,Loosen the fixed bar
+Milling Machine,The spindle brake does not work normally,The brake circle is damaged ,Change the brake circle
+Milling Machine,The spindle does not rotate ,The switch has poor contact,Check the power swtich 
+Milling Machine,The spindle does not rotate ,The belt is too tight,Adjust it
+Milling Machine,The spindle does not rotate ,Something with the motor ,Repair it
+Milling Machine,Wrong rotation direction,The power switch turns  to the wrong direction,Change the switch indication position 

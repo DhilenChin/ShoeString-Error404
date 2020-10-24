@@ -1,0 +1,89 @@
+Machine,Trouble,,Solution
+CNC Machine,"Tool magazine(Umbrella
+type)","Noise for tool
+changing",1. Check the air pressure
+CNC Machine,"Tool magazine(Umbrella
+type)","Noise for tool
+changing","2.Check the milling chuck pull stud model
+"
+CNC Machine,"Tool magazine(Umbrella
+type)","Noise for tool
+changing",3.Check the cylindrical travel
+CNC Machine,"Tool magazine(Umbrella
+type)","Noise for tool
+changing",4.Check the oil input.
+CNC Machine,Tool magazine(Umbrella type),Can't change the tool,1. Check the air pressure
+CNC Machine,Tool magazine(Umbrella type),Can't change the tool,"2. Check the tool magazine manually, if can't move, check
+the circuit breaker"
+CNC Machine,Tool magazine(Umbrella type),Can't change the tool,3. Check if tool magazine motor phase is right or not
+CNC Machine,Tool magazine(Umbrella type),Can't change the tool,"4. Check if the limit switch of tool loosening is in right
+position"
+CNC Machine,Tool magazine(Umbrella type),Can't change the tool,5. Check if the sensor switch is right or not
+CNC Machine,Tool magazine(Umbrella type),Can't change the tool,"6. Check if the tools is hit or the reference point is changing,
+adjust 3-axis parameter according to P 2038(MITSUBISHI) or P1241(FANUC)."
+CNC Machine,Tool magazine(Umbrella type),Tool number in chaos,1.Check if the motor phase
+CNC Machine,Tool magazine(Umbrella type),Tool number in chaos,"2. Reset the tool magazine, and re-perform the procedure"
+CNC Machine,Tool magazine(Umbrella type),"Tool magazine
+keep rotation",1. Adjust the tool counter
+CNC Machine,Tool magazine(Umbrella type),Tool magazine not drawing back.,"1.Set Feed Rate knob as 0 under HANDWHEEL model, press RESET to get the tool magazine back."
+CNC Machine,Troubleshoot (Arm type),"Noise for tool
+changing",1.Check the air pressure
+CNC Machine,Troubleshoot (Arm type),"Noise for tool
+changing",2.Check the milling chuck pull stud model
+CNC Machine,Troubleshoot (Arm type),"Noise for tool
+changing","3.Check the cylindrical travel
+"
+CNC Machine,Troubleshoot (Arm type),"Noise for tool
+changing","4.Adjust the second reference position, spindle positioning angle, spindle tool positioning, spindle tool switch positioning etc."
+CNC Machine,Troubleshoot (Arm type),"Can't change the
+tool",1.Check the air pressure
+CNC Machine,Troubleshoot (Arm type),"Can't change the
+tool","2.Check the tool magazine manually, if can't move, check the circuit breaker"
+CNC Machine,Troubleshoot (Arm type),"Can't change the
+tool",
+CNC Machine,Troubleshoot (Arm type),"Can't change the
+tool",3.Check if tool magazine motor phase is right or not
+CNC Machine,Troubleshoot (Arm type),"Can't change the
+tool",4. Check if the brake is too tight or too loosen 5.Check the tool sleeve's tolerance
+CNC Machine,Troubleshoot (Arm type),"Can't change the
+tool","6.Arm not back to zero, adjust the arm screw to ZERO point, when the power on is ok."
+CNC Machine,Troubleshoot (Arm type),Tool magazine not drawing back,"1.Set Feed Rate knob as 0 under HANDWHEEL model, press RESET to get the tool magazine back"
+CNC Machine,Axis Trouble,Over limited,"1. Press 'O.T.REL' key, use the handwheel rotate the axis to reverse direction."
+CNC Machine,Axis Trouble,Over limited,2. Check if the limit switch is broken.
+CNC Machine,Axis Trouble,Can't back to zero,1. Check the limit switch is right set in the software or not
+CNC Machine,Axis Trouble,Can't back to zero,2. Adjust or replace the ZERO block or SWITCH
+CNC Machine,Axis Trouble,Noise for axis,1.Clean the axis cover.
+CNC Machine,Axis Trouble,Noise for axis,
+CNC Machine,Axis Trouble,Noise for axis,2.Charge the bearing
+CNC Machine,Axis Trouble,Noise for axis,"3. If it is from Z axis, check it is loosen for the hammer and guide way is loosen or not. Check if the hammer chain and guide wheel is wearing or not."
+CNC Machine,Spindle Trouble,Spindle Noise,1.Lubricate the spindle belt
+CNC Machine,Spindle Trouble,Spindle Noise,2.Adjust the belt tension
+CNC Machine,Spindle Trouble,Spindle Noise,3.Replace the spindle belt or spindle.
+CNC Machine,Coolant pump trouble,Can't drain,
+CNC Machine,Coolant pump trouble,Can't drain,1.Check If the coolant liquid is enough or not.
+CNC Machine,Coolant pump trouble,Can't drain,2.Input water to exclude the air inside the coolant tank
+CNC Machine,Coolant pump trouble,Can't drain,3. Check the power sequence
+CNC Machine,Coolant pump trouble,Can't drain,4.Check the thermal relay
+CNC Machine,Coolant pump trouble,Can't drain,5. Replace the coolant
+CNC Machine,Lubrication pump trouble,,1.Check if the lubrication oil is enough or not.
+CNC Machine,Lubrication pump trouble,,2.Check the oil filter
+CNC Machine,Lubrication pump trouble,,3.Check if the oil is SHELL TONA68 or equal one
+CNC Machine,Lubrication pump trouble,,4.Adjust or replace the valve.
+CNC Machine,Lubrication pump trouble,,5.Replace the Pump.
+,,,
+Machine,TROUBLE CODE,Trouble,Solution
+CNC Machine,1020. TOOL NOT INPOSITION,Tool magazine is not positioned and could notget the sensor signal,"1. Make the tool magazine forward/backward rotation by hand to see if the alarm can be elimated, if 1027 alarm appears, operate the magnetic valve by hand, and rotate the tool magazine by hand too, then eliminate the alarm."
+CNC Machine,,,2. Check if the sensor switch is broken or not
+CNC Machine,1021. TOOL NO. NOT FOUND,Cannot find the tool number,Please re-tidy the tool number
+CNC Machine,1022. TOOL POT NOT DOWN,Tool collets cannot go down,Check the circuit
+CNC Machine,1023. ARM 90 ERROR,Arm 90degree error,Replace the sensor
+CNC Machine,1025. TOOL NOT UNCLAMP,Tool unclamp,Check the limit switch of tool loosen
+CNC Machine,1026. ARM 270 ERROR,Arm-270degree Error,Check the sensor switch
+CNC Machine,1027. TOOL POT NOT UP,Tool collets cannot go upward,Check sensor switch and circuit
+CNC Machine,1028. ARM JOG MODE,Arm JOG mode error,Re-start the controller
+CNC Machine,1029. TOOL NOT CLAMP,Tool is not clamp well,Check the limit switch
+CNC Machine,1030. ARM HOME POS ERROR,Arm home point error,Check the sensor switch
+CNC Machine,1031. ATC LS ERROR,ATC limit error,"1. Check the spindle tool loosen/clamp can test the signal at the same time, adjust the limit position."
+CNC Machine,1032. T CODE = SP,TCODE = Spindle tool,Reset the tool magazine when Tcode is not equal to spindle tool
+CNC Machine,2000. DOOR NOT CLOSE,Door is not close,Shut the door
+CNC Machine,2001.4 AXIS CLAMP,The 4th axis is not clamped,Clamp the 4th well
