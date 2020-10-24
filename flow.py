@@ -1,6 +1,6 @@
 def decision_logic(big_tree):
     branch = high_score(big_tree)
-    return branch.lable
+    return branch.label
 
 def high_score(branch):
     children = branch.branches
