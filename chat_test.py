@@ -31,3 +31,5 @@ text = input("What is your issue with the machine?")
 branch = best_branch(data, text)
 print('Your issue is', branch.label)
 print('Try', branch.branches[0].label)
+
+text = input('Did this solution work?')
