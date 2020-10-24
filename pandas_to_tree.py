@@ -14,9 +14,3 @@ def pandas_to_tree(dataframe):
     return tree
 
 
-dataframe = pd.read_csv('milling_machine.csv')
-
-tree = pandas_to_tree(dataframe)
-print(tree)
-for b in tree.branches:
-    print(b.keywords)
