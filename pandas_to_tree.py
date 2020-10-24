@@ -3,7 +3,7 @@ import pandas as pd
 from tree import Tree
 
 def pandas_to_tree(dataframe):
-    tree = Tree('Milling machine')
+    tree = Tree('Machine')
     troubles = dataframe['Trouble'].unique()
     for i in range(len(troubles)):
         analysis = dataframe.loc[dataframe['Trouble'] == troubles[i]]['Analysis'].values
@@ -14,8 +14,9 @@ def pandas_to_tree(dataframe):
     return tree
 
 
-
+'''
 dataframe = pd.read_csv('milling_machine.csv')
 
 tree = pandas_to_tree(dataframe)
 print(tree)
+'''
