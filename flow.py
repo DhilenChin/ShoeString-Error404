@@ -13,7 +13,7 @@ def high_score(branch):
 def high_scores(branch):
     children = branch.branches
     s = lambda x: x.score
-    children.sort(key = s)
+    children.sort(reverse = True, key = s)
     return children
 
 #The below is edited code for returning solutions in rank order - C

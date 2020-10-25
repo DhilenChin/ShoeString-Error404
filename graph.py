@@ -52,7 +52,6 @@ def millf():
         sendMessage('Your problem could be: ' + branch.label)
         for i in range(len(solutions)):
             sol = solutions[i]
-            sendMessage(str(sol.score))
             sendMessage(sol.label)
             sendMessage(sol.branches[0].label)
             sendMessage('Did that work? (yes/no)')
@@ -62,9 +61,7 @@ def millf():
                 return
             if 'yes' in response.split():
                 reset()
-                branch.score += 1
-                for b in branch.branches:
-                    b.score += 1
+                sol.score += 1
                 return
 
 def reset():
