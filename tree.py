@@ -17,6 +17,7 @@ class Tree:
         self.keywords = keywords
         self.branches = list(branches)
         self.used = False
+        self.datelist = []
 
     def is_leaf(self):
         return not self.branches

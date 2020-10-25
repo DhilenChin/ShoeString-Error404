@@ -5,6 +5,9 @@ from flow import high_scores
 import pandas as pd
 from chatbot import EchoBot, recieveMessage, sendMessage
 from RLchatbot import giving_points
+from datetime import date
+from matplotlib.dates import date2num
+
 class Node:
 
     def __init__(self, label, parents=[], children = [], keywords = [], f = lambda *args: None):
@@ -61,6 +64,7 @@ def millf():
                 return
             if 'yes' in response.split():
                 reset()
+                sol.datelist.append(date2num(date.today()))
                 sol.score += 1
                 return
 
