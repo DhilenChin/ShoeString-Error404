@@ -28,7 +28,7 @@ class EchoBot(Client):
 def recieveMessage():
     client.listen()
     print(message)
-    return message
+    return message.lower()
 
 def sendMessage(message):
     client.send(Message(text=message), thread_id=threadId, thread_type=threadType)
@@ -37,5 +37,3 @@ client = EchoBot("boxwithabutton@gmail.com", "FUCKBotpress")
 message = ""
 threadId = ""
 threadType = ""
-print(recieveMessage())
-sendMessage("Hi!")
