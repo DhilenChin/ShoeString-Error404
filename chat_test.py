@@ -4,7 +4,6 @@ from keywords import keywords
 from decision import best_branch
 from flow import high_score
 
-
 milling = pandas_to_tree(pd.read_csv('milling_machine.csv'))
 edm = pandas_to_tree(pd.read_csv('edm_milling.csv'))
 
@@ -32,5 +31,10 @@ text = input("What is your issue with the machine?")
 branch = best_branch(data, text)
 print('Your issue is', branch.label)
 print('Try', high_score(branch).label)
+
+# branches = ordered_score(branch)
+# print('Try:')
+# for b in branches:
+#   print('{num}. '.format(b.index()) + b.label)
 
 text = input('Did this solution work?')

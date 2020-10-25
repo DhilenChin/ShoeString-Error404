@@ -2,6 +2,12 @@
 
 from fbchat import log, Client
 from fbchat.models import *
+from pandas_to_tree import pandas_to_tree
+import pandas as pd
+from keywords import keywords
+from decision import best_branch
+
+
 
 # Subclass fbchat.Client and override required methods
 class EchoBot(Client):
@@ -23,8 +29,11 @@ def generateReplies(incoming):
     reversed = ""
     for i in range(1, len(incoming)+1):
         reversed += incoming[len(incoming)-i]
-        
-    return ["Recieved the following message: \"{}\"".format(incoming), incoming, reversed, incoming, "Ok, by now!"]
+
+    words = keywords(incoming)
+    
+
+    return ["Received the following message: \"{}\"".format(incoming), reversed, incoming, "Ok, bye now!"]
 
 
 client = EchoBot("boxwithabutton@gmail.com", "FUCKBotpress")

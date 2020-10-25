@@ -11,10 +11,12 @@ class Tree:
     def __init__(self, label, branches=[], score = 0, keywords = []):
         for b in branches:
             assert isinstance(b, Tree)
+            
         self.label = label
         self.score = score
         self.keywords = keywords
         self.branches = list(branches)
+        self.used = False
 
     def is_leaf(self):
         return not self.branches
@@ -55,3 +57,5 @@ class Tree:
                 tree_str += print_tree(b, indent + 1)
             return tree_str
         return print_tree(self).rstrip()
+
+    

@@ -18,7 +18,23 @@ def best_branch(tree, text_in):
 
     return best_branch
 
+##edited for ranking branches. might discard - C
+# def best_branch(tree, text_in):
+#     """A function that returns the branch of TREE that has the most matching keywords with TEXT_IN"""
+#     keys_in = keywords(text_in)
+#     #print(keys_in)
+#     best_intersect = 0
+#     branches_order = [] 
+#     best_branch = Tree('No matching issues found')
+#     for branch in tree.branches:
+#         intersect = len(list(set(keys_in).intersection(set(branch.keywords))))
+#         #print(branch.keywords)
+#         if best_intersect < intersect:
+#             best_intersect = intersect
+#             best_branch = branch
+#             branches_order.append(best_branch)
 
+#     return best_branch, branches_order
 """
 dataframe = pd.read_csv('edm_milling.csv')
 

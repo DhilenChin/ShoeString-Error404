@@ -10,6 +10,15 @@ def high_score(branch):
             max_element = i
     return children[max_element]
 
-
-
-
+#The below is edited code for returning solutions in rank order - C
+def ordered_score(branch):
+    children = branch.branches
+    ordered_children = children
+    
+    N = len(children)
+    for i in range(N - 1):
+            if ordered_children[i] > ordered_children[i + 1]:
+                ordered_children[i + 1], ordered_children[i] = ordered_children[i], ordered_children[i + 1]
+        N = N - 1
+    
+    return ordered_children
