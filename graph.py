@@ -7,6 +7,9 @@ from chatbot import EchoBot, recieveMessage, sendMessage
 from RLchatbot import giving_points
 from datetime import date
 from matplotlib.dates import date2num
+from soutions_frequency import frequency_addition
+
+
 
 class Node:
 
@@ -66,6 +69,7 @@ def millf():
                 reset()
                 sol.datelist.append(date2num(date.today()))
                 sol.score += 1
+                frequency_addition(sol)
                 return
 
 def reset():
