@@ -17,8 +17,8 @@ def ordered_score(branch):
     
     N = len(children)
     for i in range(N - 1):
-            if ordered_children[i] > ordered_children[i + 1]:
-                ordered_children[i + 1], ordered_children[i] = ordered_children[i], ordered_children[i + 1]
+        if ordered_children[i] > ordered_children[i + 1]:
+            ordered_children[i + 1], ordered_children[i] = ordered_children[i], ordered_children[i + 1]
         N = N - 1
     
     return ordered_children

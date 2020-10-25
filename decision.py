@@ -18,6 +18,25 @@ def best_branch(tree, text_in):
 
     return best_branch
 
+def best_branches(tree, text_in):
+    """A function that returns the branches of TREE in order of matching the keywords of TEXT_IN"""
+    keys_in = keywords(text_in)
+    s = lambda x: len(list(set(keys_in).intersection(set(x.keywords))))
+    branches = tree.branches[:]
+    branches.sort(reverse = True, key = s)
+    return branches
+
+
+def best_children(node, text_in):
+    """A function that returns a list of the children of NODE sorted by how much their keywords match TEXT_IN"""
+    keys_in = keywords(text_in)
+    s = lambda x: len(list(set(keys_in).intersection(set(x.keywords))))
+    childs = node.children[:]
+    childs.sort(key = s)
+    return childs
+
+
+
 ##edited for ranking branches. might discard - C
 # def best_branch(tree, text_in):
 #     """A function that returns the branch of TREE that has the most matching keywords with TEXT_IN"""
