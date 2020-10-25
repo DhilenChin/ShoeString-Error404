@@ -1,26 +1,25 @@
 Machine,Trouble,Analysis,Solution
-EDM,No power Input,No main power switch,Check power input
-EDM,No power Input,Power lines loosened,Connect all lines closely
-EDM,No power Input,Set emergency stop,Reset it
-EDM,Discharge Hunting,Line of Electrode ,Check power input
-EDM,Discharge Hunting,If not on state ,Enable it
-EDM,Discharge Hunting,Value of GAP is too low,Adjust the value
-EDM,Discharge unstably,Electrode loosened,
-EDM,Discharge unstably,Negative discharge ,
-EDM,Discharge unstably,Bad servo sensibility,
-EDM,Discharge unstably,Wrong discharge condition,
-EDM,Discharge unstably,Unsuitable oil supply,
-EDM,Discharge unstably,Loosen electrode head,
-EDM,Discharge unstably,Convey belt is too tight or too loosened ,
-EDM,Easy to deosit carbon,power lines loosened,connect all lines closely
-EDM,Easy to deosit carbon,negatively discharge,
-EDM,Easy to deosit carbon,unfit servo sensibility,
-EDM,Easy to deosit carbon,wrong discharging condition,
-EDM,Easy to deosit carbon,wrong mode to supply oil,
-EDM,Easy to deosit carbon,loosened electrode head,
-EDM,Easy to deosit carbon,Convey belt is too tight or too loosened ,
-EDM,Oil pump is not running,oil pump runs in anti-clockwise direction,
-EDM,Oil pump is not running,short of processing oil,
-EDM,Oil pump is not running,there is no oil in the oil hole of oil pump,
-EDM,Oil pump is not running,something jammed with oil pump,
-EDM,Oil pump is not running, trouble with oil pump,
+EDM,No power Input,No main power switch?,Check power input
+EDM,No power Input,Power lines loosened?,Connect all lines closely
+EDM,No power Input,Set emergency stop?,Reset it
+EDM,Discharge Hunting,Line of Electrode ?,Check power input
+EDM,Discharge Hunting,If not on state ?,Enable it
+EDM,Discharge Hunting,Value of GAP is too low?,Adjust the value
+EDM,Discharge unstably,Electrode loosened?,Tighten the electrode with tools
+EDM,Discharge unstably,Negative discharge ?,Use alternative power input
+EDM,Discharge unstably,Bad servo sensibility?,Replace the servo
+EDM,Discharge unstably,Wrong discharge condition?,Use alternative power input
+EDM,Discharge unstably,Unsuitable oil supply?,Check the oil valve
+EDM,Discharge unstably,Loosen electrode head?,Tighten the electrode with tools
+EDM,Discharge unstably,Convey belt is too tight or too loosened ?,Adjust the rolller position
+EDM,Easy to deosit carbon,power lines loosened?,connect all lines closely
+EDM,Easy to deosit carbon,negatively discharge?,Use alternative power input
+EDM,Easy to deosit carbon,unfit servo sensibility?,Replace the servo
+EDM,Easy to deosit carbon,wrong discharging condition?,Use alternative power input
+EDM,Easy to deosit carbon,wrong mode to supply oil?,Use different mode of supplying
+EDM,Easy to deosit carbon,loosened electrode head?,Tighten the electrode with tools
+EDM,Easy to deosit carbon,Convey belt is too tight or too loosened ?,Adjust the rolller position
+EDM,Oil pump is not running,oil pump runs in anti-clockwise direction?,Check the pressure in the oil pump
+EDM,Oil pump is not running,short of processing oil?,Refill the oil
+EDM,Oil pump is not running,there is no oil in the oil hole of oil pump?,Check for leakage
+EDM,Oil pump is not running,something jammed with oil pump?,Check for blockage
