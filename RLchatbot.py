@@ -4,21 +4,27 @@ import numpy as np
 df = pd.read_csv('milling_machine.csv')
 df['Points'] = 0
 
-
-def sorting_best_solution (input, df, machine, trouble, analysis, solution):
+def giving_points (response, df, machine, trouble, analysis, solution):
     #input should only be 'yes' or 'no' , anything else shld be converted to these two
     # df is dataframe and everything else is a string
-    if input == 'yes':
-        for index, rows in df.iterrows():
-            if df.iloc[index, 0] == machine and df.iloc[index, 1] == trouble and df.iloc[index, 2] == analysis and df.iloc[index, 3] == solution:
-                df.iloc[index, 4] =+1 
+    if response == 'yes':
+        for i in  range (len(df)):
+            if df.iloc[i, 0] == machine and df.iloc[i, 1] == trouble and df.iloc[i, 2] == analysis and df.iloc[i, 3] == solution:
+                df.iloc[i, 4] =+1 
+                
+        
+    df = df.sort_values(['Trouble', 'Points'], ascending = [True, False])
+    df.reset_index(drop = True, inplace = True)
+    return df
 
-    
+
 machine = 'Milling Machine'
 trouble = 'The workpiece milled is not flat'
-analysis = 'The spindle bearing is loose'
-solution = 'Adjust the spindle bearing gap'
+analysis = 'Are the gibs of X, Y axis loose?'
+solution = "Adjust the gibs' gap"
 
-sorting_best_solution ('yes', df, machine, trouble, analysis, solution)
+
+
+df = giving_points('yes', df, machine, trouble, analysis, solution)
+
 print(df)
-
