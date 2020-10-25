@@ -2,12 +2,6 @@
 
 from fbchat import log, Client
 from fbchat.models import *
-from pandas_to_tree import pandas_to_tree
-import pandas as pd
-from keywords import keywords
-from decision import best_branch
-
-
 
 # Subclass fbchat.Client and override required methods
 class EchoBot(Client):
@@ -19,22 +13,29 @@ class EchoBot(Client):
 
         # If you're not the author, process message
         if author_id != self.uid:
-            incoming = message_object.text
-            replies = generateReplies(incoming)
-            for reply in replies:
-                self.send(Message(text=reply), thread_id=thread_id, thread_type=thread_type)
+            global message
+            global threadId
+            global threadType
+            message = message_object.text
+            threadId = thread_id
+            threadType = thread_type
+        self.stopListening()
+                
 
 
-def generateReplies(incoming):
-    reversed = ""
-    for i in range(1, len(incoming)+1):
-        reversed += incoming[len(incoming)-i]
 
-    words = keywords(incoming)
-    
 
-    return ["Received the following message: \"{}\"".format(incoming), reversed, incoming, "Ok, bye now!"]
+def recieveMessage():
+    client.listen()
+    print(message)
+    return message
 
+def sendMessage(message):
+    client.send(Message(text=message), thread_id=threadId, thread_type=threadType)
 
 client = EchoBot("boxwithabutton@gmail.com", "FUCKBotpress")
-client.listen()
+message = ""
+threadId = ""
+threadType = ""
+print(recieveMessage())
+sendMessage("Hi!")
