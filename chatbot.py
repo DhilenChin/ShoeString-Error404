@@ -22,9 +22,6 @@ class EchoBot(Client):
         self.stopListening()
                 
 
-
-
-
 def recieveMessage():
     client.listen()
     print(message)
@@ -32,6 +29,14 @@ def recieveMessage():
 
 def sendMessage(message):
     client.send(Message(text=message), thread_id=threadId, thread_type=threadType)
+
+def sendQuestion(question, answers):
+    quickReplyObjects = []
+    for answer in answers:
+        quickReplyObjects.append(QuickReplyText(title=answer))
+
+    client.send(Message(text=question, quick_replies=quickReplyObjects ), thread_id=threadId, thread_type=threadType)
+    return recieveMessage()
 
 client = EchoBot("boxwithabutton@gmail.com", "FUCKBotpress")
 message = ""
