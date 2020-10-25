@@ -23,7 +23,7 @@ def best_branches(tree, text_in):
     keys_in = keywords(text_in)
     s = lambda x: len(list(set(keys_in).intersection(set(x.keywords))))
     branches = tree.branches[:]
-    branches.sort(reverse = True, key = s)
+    branches.sort( key = s)
     return branches
 
 

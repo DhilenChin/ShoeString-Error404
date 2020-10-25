@@ -46,7 +46,7 @@ def edmf():
     while len(analyses) > 0:
         branch = analyses.pop()
         print('Your problem could be: ', branch.label)
-        print('Try', high_score(branch).label)
+        print( high_score(branch).label)
         print('Did that work? (yes/no)')
         response = input()
         if 'yes' in response.split():
